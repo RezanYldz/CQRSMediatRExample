@@ -3,7 +3,7 @@ using CQRSMediatRExample.Api.Commands.Response;
 using CQRSMediatRExample.DAL;
 using MediatR;
 
-namespace CQRSMediatRExample.Api.Handlers
+namespace CQRSMediatRExample.Api.Handlers.CommandHandlers
 {
     public class CreateCategoryCommandHandler : IRequestHandler<CreateCategoryCommandRequest, CreateCategoryCommandResponse>
     {
@@ -28,7 +28,8 @@ namespace CQRSMediatRExample.Api.Handlers
                     CategoryId = result.Entity.CategoryId,
                     IsSuccess = true
                 };
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 return new CreateCategoryCommandResponse()
                 {

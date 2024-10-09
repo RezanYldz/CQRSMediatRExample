@@ -3,7 +3,7 @@ using CQRSMediatRExample.Api.Queries.Response;
 using CQRSMediatRExample.DAL;
 using MediatR;
 
-namespace CQRSMediatRExample.Api.Handlers
+namespace CQRSMediatRExample.Api.Handlers.QueryHandlers
 {
     public class GetAllCategoryQueryHandler : IRequestHandler<GetAllCategoryQueryRequest, List<GetAllCategoryQueryResponse>>
     {
@@ -12,9 +12,9 @@ namespace CQRSMediatRExample.Api.Handlers
         {
             _applicationDbContext = applicationDbContext;
         }
-        public async Task<List<GetAllCategoryQueryResponse>> Handle (GetAllCategoryQueryRequest request, CancellationToken cancellationToken)
+        public async Task<List<GetAllCategoryQueryResponse>> Handle(GetAllCategoryQueryRequest request, CancellationToken cancellationToken)
         {
-            var response = _applicationDbContext.Categories.Select(e=>
+            var response = _applicationDbContext.Categories.Select(e =>
             new GetAllCategoryQueryResponse()
             {
                 CategoryId = e.CategoryId,
