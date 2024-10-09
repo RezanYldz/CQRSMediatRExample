@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSMediatRExample.Api", "CQRSMediatRExample.Api\CQRSMediatRExample.Api.csproj", "{E5C6EEDB-1990-4D2A-8B9F-82D5C6BB29DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSMediatRExample.Api", "CQRSMediatRExample.Api\CQRSMediatRExample.Api.csproj", "{E5C6EEDB-1990-4D2A-8B9F-82D5C6BB29DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRSMediatRExample.DAL", "CQRSMediatR.DAL\CQRSMediatRExample.DAL.csproj", "{EFCD6E01-CF96-4BBC-9BCC-8E97A7C3C58B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSMediatRExample.DAL", "CQRSMediatR.DAL\CQRSMediatRExample.DAL.csproj", "{EFCD6E01-CF96-4BBC-9BCC-8E97A7C3C58B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CQRSExample.Api", "CQRSExample.Api\CQRSExample.Api.csproj", "{9464DD83-D869-40F8-9A69-B837CCE33A58}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{EFCD6E01-CF96-4BBC-9BCC-8E97A7C3C58B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EFCD6E01-CF96-4BBC-9BCC-8E97A7C3C58B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EFCD6E01-CF96-4BBC-9BCC-8E97A7C3C58B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9464DD83-D869-40F8-9A69-B837CCE33A58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9464DD83-D869-40F8-9A69-B837CCE33A58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9464DD83-D869-40F8-9A69-B837CCE33A58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9464DD83-D869-40F8-9A69-B837CCE33A58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
